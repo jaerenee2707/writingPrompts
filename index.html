@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="WP" class="w3-modal" style="display: block;">
+    <div class="w3-modal-content">
+      <div class="WPcontainer" id="home">
+        <div style="text-align: right;">
+          <button class="WPclose" onclick="document.getElementById('WP').style.display='none'">close</button>
+        </div>
+        <div style="user-select: none">
+          <span class="title-g">Writing Prompts</span>
+          <span class="icon">✍️</span>
+        </div>
+        <div class="space"></div>
+        <div id="generate_space">
+          The magic begins... Start by clicking Generate.
+          Heart favorite prompts by clicking the heart. and then find then in the 🖤 prompts page.
+        </div>
+        <div class="love_section">
+          <p id="love" style="user-select: none; display: none;">🖤</p>
+        </div>
+        <div id="WPgenerate">
+          <button onclick="generate()">generate</button>
+          <div id="hearted">
+            <button id="heartedBut" onclick="favorites()">Your 🖤 Prompts</button>
+          </div>
+        </div>
+
+        <!-- favorite page -->
+        <div class="WPcontainer" id="favs" style="display: none;">
+          <div class="topbuttons">
+            <button class="WPclose" onclick="clearAndClose()">close</button>
+          </div>
+          <p style="user-select: none">favorites. Share completed stories with <a href="https://twitter.com/search?q=%23pagebyjae&src=typed_query"><i class="hashtag">#pagebyjae</i></a></p>
+          <div id="favBlocks"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="WPlist.js"></script>
+</body>
+
+</html>
